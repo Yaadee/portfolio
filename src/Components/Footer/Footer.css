@@ -1,31 +1,64 @@
 .footer {
   text-align: center;
-  color: var(--clr-primary);
+  color: var(--clr-primary); /* Replace with your primary color variable */
+  background-color: var(--clr-bg-secondary); /* Replace with a suitable background color */
+  padding: 20px 10px;
+  font-size: 1rem;
+  border-top: 2px solid var(--clr-primary); /* Add a subtle divider */
 }
 
-.footerBox{
-  /* border: 3px solid var(--clr-primary); */
-  width: 50%;
+.footer_div {
+  width: 60%; /* Adjusted for better balance */
   margin: auto;
-  padding-bottom: 20px;
-  border-radius: 15px;
-  background-color: transparent;
   padding: 20px;
-  height: auto;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white overlay */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* .footerBox:hover {
-  transform: scale(1.04);
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 15px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-} */
+.footer_div:hover {
+  transform: scale(1.05); /* Subtle hover scaling effect */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px; /* Enhanced shadow on hover */
+}
+
+.footer_links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 15px;
+}
+
+.footer_links a {
+  color: var(--clr-primary); /* Link color */
+  font-size: 1.5rem; /* Icon size */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer_links a:hover {
+  color: var(--clr-accent); /* Accent color for hover effect */
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+@media (max-width: 768px) {
+  .footer_div {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .footer_links {
+    gap: 1rem;
+  }
+}
 
 @media (max-width: 600px) {
-  .footerBox{
-    /* border: 3px solid var(--clr-primary); */
+  .footer_div {
     width: 100%;
-    border-radius: 0px;
-    margin-bottom: 0px;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  .footer_links a {
+    font-size: 1.2rem; /* Slightly smaller icons on mobile */
   }
 }
