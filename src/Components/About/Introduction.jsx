@@ -1,10 +1,7 @@
 import React from "react";
 import "./Introduction.css";
-import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import { ThemeContext } from "../../Context/theme";
-import profilePic from "../../assets/photo.jpg";
-
-
+import profilePic from "../../assets/1212.jpg";
 export const Introduction = () => {
   const [{ themename }] = React.useContext(ThemeContext);
 
@@ -21,34 +18,25 @@ export const Introduction = () => {
             </div>
             <div className="introduction_datacontainer">
               <h4>
-                Hi Everyone, My name is{" "}
-                <span className="different">Yadasa Tarafa </span> from{" "}
-                <span className="different">
-                  {" "}
-                  Addis Ababa Ethiopia
-                </span>
-                Graduated in  Computer Science and Engineering
+              I’m a developer passionate about developing web applications and data engineering. I specialize in creating, insightfull visualizations for 
+              data-driven applications and building machine learning models.  
+              My favorite work lies at the 
+              intersection of design and development, creating experiences
+               that not only look great but are meticulously built for performance and usability.{" "}
+              </h4>
+              <h4>
+                
+                I have graduated in  Computer Science and Engineering
                 from{" "}
                 <span className="different">
-                  Adama Science and Technology  University
-                </span> AI and Geospatial Researcher at Ethiopian Artificial Intelligence Institute
-               
-               
-              </h4>
-              <h4>Terms That can describe me apart form Coding :</h4>
-              <h4 className="different">
-                <span className="icons">
-                  <ExitToAppIcon />
+                  Adama Science and Technology  University. 
                 </span>
-                Junior Data Analyst and Engineer{" "}
-              </h4>
-              <h4 className="different">
-                <span className="icons">
-                  <ExitToAppIcon />
-                </span>
-                Machine learning Enthusiast{" "}
+                </h4>
+                <h4>
+                Currently, I'm a Senior Full stack Engineer at Ethiopian Artificial Intlligence Institute  <span className="different"> EAII</span>, specializing in DDD, Hexagonal develoment with Spring boot and Angularjs.
               </h4>
               
+  
               
             </div>
           </div>

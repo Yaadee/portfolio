@@ -5,7 +5,6 @@
   color: var(--clr-fg);
   background-color: var(--clr-bg);
 }
-
 .light {
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;

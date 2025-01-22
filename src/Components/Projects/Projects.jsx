@@ -1,12 +1,18 @@
 import React from "react";
 import "./Projects.css";
 import { FaReact, FaHardHat } from "react-icons/fa";
-import pic from "../../assets/p1.png";
-import Ecom from "../../assets/Ecom.jpg"
+import pic from "../../assets/applicatio.jpg";
+import Ecom from "../../assets/one.jpg"
 import { Si1Password } from 'react-icons/si'; 
 
 import {
   SiHtml5,
+  SiPostgresql,
+  SiDocker,
+  SiJenkins,
+  SiAngularjs,
+  SiSpringboot,
+  SGitlabi,
   SiExpress,
   SiMongodb,
   SiNodedotjs,
@@ -37,14 +43,15 @@ export const Projects = () => {
                 power of Artificial Intelligence. DDD and Hexagonal development is used.
                 </p>
                 <div>
-                  <SiNodedotjs />
-                  <SiExpress />
-                  <SiMongodb />
-                  <FaReact />
-                  <Si1Password />
+                  <SiPostgresql />
+                  <SiSpringboot />
+                  <SiAngularjs />
+                  <SiDocker />
+                  <SiJenkins />
+                  
                 </div>
                 <div>
-                  <a
+                  {/* <a
                     href="https://github.com/AbdiElos/PMS-backend"
                     target="_blank"
                     rel="noreferrer"
@@ -52,7 +59,7 @@ export const Projects = () => {
                     <span type="button" className="btns onbt">
                       View Code
                     </span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -61,26 +68,31 @@ export const Projects = () => {
             <div className="project">
               <div className="project_videocontainer">
                 <div>
-                  <img
+                  <img className="project_img"
                     src={Ecom}
-                    alt="ERRP"
+                    alt="Samrt Irrigation System"
                   />
                 </div>
               </div>
               <div className="project_information">
-                <h2> Electronic Retailer rival platform</h2>
+                <h2> <span className="different"> Smart Irrigation system</span> </h2>
                 <p>
                   
-The Electronic Retailer Rival Platform is a dynamic e-commerce solution developed using the MERN stack (MongoDB, Express.js, React, Node.js). It is designed to compete with leading online retailers by offering a seamless shopping experience, robust product management, and secure transaction processing. This platform integrates modern web technologies to provide a scalable and efficient solution for electronic retail businesses.
+Smart Irrigation System is AI incorporated system that helps farms to manage and automate irrigation system with the help of IoT. It is developed with 
+Arduino, Nodejs,WIFI module, Express, React, and MongoDB. It is designed to give water according to real data from farm based on plant type and growth level of that specific plant.
+Based on the trained model and real time data the system either give water tp the palnt or reschedule for the next measurement through sensors and feeds the data to the model as well as to the user through the smart phone.
                 </p>
                 <div>
-                  <DiCss3 />
+                  <SiExpress />
                   <SiHtml5 />
                   <IoLogoJavascript />
+                  <SiMongodb />
+                  <SiNodedotjs />
+                  <FaReact />
                 </div>
                 <div>
                   <a
-                    href="https://github.com/AbdiElos/finalErp"
+                    href="https://github.com/Yaadee/SmartIrrigation"
                     target="_blank"
                     rel="noreferrer"
                   >

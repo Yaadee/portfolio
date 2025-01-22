@@ -10,10 +10,10 @@ export const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "yadasat437@gmail.com", 
-        "For any suggestion and whatever on your mind email me", 
+        "service id", 
+        "template id", 
         form.current,
-        "yadasat437@gmail.com" 
+        "your-public-key" 
       )
       .then(
         (result) => {
@@ -47,12 +47,12 @@ export const Contact = () => {
         {/* Contact Form */}
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="form-group">
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">Name  </label>
             <input type="text" id="name" name="name" required placeholder="Your Name" />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Your Email" />
+            <label htmlFor="email">Email  </label>
+            <input type="email" id="email" name="email" required placeholder="Your Email Address" />
           </div>
           <div className="form-group">
             

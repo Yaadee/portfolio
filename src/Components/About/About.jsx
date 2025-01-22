@@ -6,11 +6,9 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
 import { BsMedium } from "react-icons/bs";
-// import PublicIcon from "@material-ui/icons/Public";
 import { Introduction } from "./Introduction";
-import { Timeline } from "./Timeline";
+
 import { Techstacks } from "./Techstacks";
-// import Button from "@mui/material/Button";
 export const About = () => {
   return (
     <>
@@ -20,8 +18,7 @@ export const About = () => {
         </h1>
         <Type />
         <p className="about__desc" data-aos="fade-right">
-          Junior Data Engineer, MERN Full Stack Developer, Java Full Stack developer. Attired with a variety of tools & technologies and keen to
-          learn new one.
+          Junior Data Engineer, MERN Full Stack Developer, Java Full Stack developer.
         </p>
         <div className="about__contact center">
           <a
@@ -71,19 +68,9 @@ export const About = () => {
           </a>
         </div>
 
-        <button
-          className="btnResume"
-          onClick={() => {
-            window.open(
-              "https://drive.google.com/file/d/1fJAroWI4zEepFwoUHeJECnfYIQCkW-9S/view?usp=sharing"
-            );
-          }}
-        >
-          Resume
-        </button>
       </div>
       <Introduction />
-      <Timeline />
+      
       <section id="#skills">
         <Techstacks />
       </section>
