@@ -8,5 +8,3 @@ to use the code
 2) cd portfolio
 3) npm install  //  if  not work because of dependency use   npm install --force
 4) start customizing and use it
-![alt text](home.png)
-![alt text](about.png)
